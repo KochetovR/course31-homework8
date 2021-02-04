@@ -1,0 +1,35 @@
+%flex {
+  display: flex;
+  align-items: center;
+}
+
+%animation {
+  transition: $animation-duration $animation-timing;
+}
+
+%body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $main-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin: 0%;
+}
+
+%visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+%list {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}

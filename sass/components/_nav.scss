@@ -1,0 +1,43 @@
+.nav {
+  position: relative;
+  @extend %flex;
+  justify-content: space-between;
+  padding: 16px 23px 15px;
+}
+
+.nav-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.nav-button .icon-cross {
+  display: none;
+}
+
+.nav-button.is-open .icon-cross {
+  display: block;
+}
+
+.nav-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: turquoise;
+
+  &.is-open {
+    display: block;
+  }
+}
