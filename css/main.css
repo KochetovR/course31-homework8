@@ -323,6 +323,21 @@ body {
   margin-bottom: 0;
 }
 
+.hero__button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
 h2,
 h3 {
   margin: 0;
@@ -343,10 +358,6 @@ p {
   position: relative;
 }
 
-.container {
-  width: 480px;
-}
-
 .logo {
   color: #2196f3;
   font-family: raleway, sans-serif;
@@ -363,12 +374,12 @@ p {
 .nav {
   position: relative;
   justify-content: space-between;
-  padding: 16px 23px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
 }
 
 .nav-button {
-  display: inline-flex;
-  margin: 0px;
   padding: 0px;
   border: none;
   background-color: transparent;
@@ -391,6 +402,10 @@ p {
   display: none;
 }
 
+.svg-menu {
+  cursor: pointer;
+}
+
 .menu-container {
   position: absolute;
   padding-left: 40px;
@@ -398,15 +413,16 @@ p {
   top: 0;
   left: 0;
   width: 100%;
+  height: 797px;
   padding-top: 48px;
-  background-color: turquoise;
+  background-color: #ffffff;
 }
 
 .menu-container.is-open {
   display: block;
 }
 
-.nav__block {
+.nav-list {
   margin-bottom: 302px;
 }
 
@@ -446,7 +462,149 @@ p {
   color: #757575;
 }
 
-.contacts__link:hover, .contacts__link:focus {
+.tel {
+  font-size: 34px;
   color: #2196f3;
+}
+
+.menu__social-list {
+  display: flex;
+}
+
+.menu__social-item {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu__social-link {
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.hero__title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  margin-top: 118px;
+  margin-bottom: 30px;
+  font-family: roboto, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features__block {
+  width: 450px;
+  padding: 60px 0;
+}
+
+.features__item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.features__block-svg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.features__title {
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.features__text {
+  display: block;
+  width: 450px;
+  font-family: roboto, sans-serif;
+  line-height: 1.71;
+  text-align: left;
+}
+
+.team {
+  padding: 60px 0;
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  color: #000000;
+}
+
+.team_card {
+  width: 450px;
+  height: 622px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__img {
+  width: 100%;
+  height: 460px;
+  margin-bottom: 30px;
+}
+
+.team__name {
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  color: #000000;
+}
+
+.team__skill {
+  display: block;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team__list-link {
+  display: flex;
+  justify-content: center;
+}
+
+.team_item-link:not(:last-child) {
+  margin-right: 32px;
+}
+
+.team__svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 /*# sourceMappingURL=main.css.map */

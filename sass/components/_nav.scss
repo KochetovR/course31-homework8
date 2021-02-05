@@ -2,12 +2,12 @@
   position: relative;
   @extend %flex;
   justify-content: space-between;
-  padding: 16px 23px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
 }
 
 .nav-button {
-  display: inline-flex;
-  margin: 0px;
   padding: 0px;
   border: none;
   background-color: transparent;
@@ -28,4 +28,7 @@
 
 .nav-button.is-open .icon-menu {
   display: none;
+}
+.svg-menu {
+  cursor: pointer;
 }

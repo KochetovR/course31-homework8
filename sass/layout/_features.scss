@@ -1,0 +1,31 @@
+.features__block {
+  width: 450px;
+  padding: 60px 0;
+}
+.features__item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.features__block-svg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $primary-backgroung-color;
+}
+.features__title {
+  font-family: $main-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $primary-black-color;
+
+  margin-bottom: 10px;
+}
+
+.features__text {
+  display: block;
+  width: 450px;
+  font-family: $main-font;
+  line-height: $secondary-line-height;
+  text-align: left;
+}
