@@ -334,20 +334,23 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .page-header {
   position: relative;
 }
 
+.container {
+  width: 480px;
+}
+
 .logo {
   color: #2196f3;
-  font-family: Raleway, sans-serif;
+  font-family: raleway, sans-serif;
+  font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -369,6 +372,7 @@ p {
   padding: 0px;
   border: none;
   background-color: transparent;
+  z-index: 999;
 }
 
 .nav-button:hover {
@@ -389,14 +393,60 @@ p {
 
 .menu-container {
   position: absolute;
+  padding-left: 40px;
   display: none;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
+  padding-top: 48px;
   background-color: turquoise;
 }
 
 .menu-container.is-open {
   display: block;
+}
+
+.nav__block {
+  margin-bottom: 302px;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.nav__item-link {
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  font-weight: 1.8;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__item-link:hover, .nav__item-link:focus {
+  color: #2196f3;
+}
+
+.contacts__block {
+  margin-bottom: 64px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contacts__link {
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  font-weight: 1.71;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

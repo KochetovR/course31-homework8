@@ -11,6 +11,7 @@
   padding: 0px;
   border: none;
   background-color: transparent;
+  z-index: 999;
 
   &:hover {
     fill: $accent-color;
@@ -27,17 +28,4 @@
 
 .nav-button.is-open .icon-menu {
   display: none;
-}
-
-.menu-container {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: turquoise;
-
-  &.is-open {
-    display: block;
-  }
 }
