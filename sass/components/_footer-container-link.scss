@@ -1,0 +1,36 @@
+.footer__container-title {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+
+.footer__container-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.footer__container-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__container-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__container-svg {
+  width: 20px;
+  height: 20px;
+  fill: $primary-white-color;
+}

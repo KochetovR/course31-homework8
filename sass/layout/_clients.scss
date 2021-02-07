@@ -1,0 +1,31 @@
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.clients__item {
+  width: calc((100% - 2 * 30px) / 2);
+  margin: 15px;
+}
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+
+.clients__svg {
+  fill: $svg-team-color;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}

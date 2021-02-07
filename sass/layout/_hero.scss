@@ -14,10 +14,3 @@
   //   color: $primary-white-color;
   text-align: center;
 }
-
-.hero__button {
-  display: block;
-  @extend %button;
-  margin-left: auto;
-  margin-right: auto;
-}

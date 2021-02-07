@@ -1,0 +1,14 @@
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: $secondary-line-height;
+  text-align: center;
+  color: $accent-color;
+  text-decoration: none;
+
+  &-white {
+    color: $primary-white-color;
+  }
+}

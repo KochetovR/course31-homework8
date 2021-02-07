@@ -12,6 +12,7 @@
   border: none;
   background-color: transparent;
   z-index: 999;
+  outline: 0;
 
   &:hover {
     fill: $accent-color;

@@ -1,0 +1,19 @@
+.footer__address {
+  display: block;
+  margin-bottom: 8px;
+  font-family: $main-font;
+  font-style: normal;
+  font-size: 14px;
+  line-height: $secondary-line-height;
+  text-align: center;
+  color: $primary-white-color;
+}
+
+.footer__contacts {
+  display: block;
+  font-family: $main-font;
+  line-height: $secondary-line-height;
+  text-align: center;
+  color: $secondary-text-color;
+  text-decoration: none;
+}
