@@ -29,6 +29,8 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $primary-black-color;
+  transition-property: color;
+  @include animation(color);
 
   &:hover,
   &:focus {
@@ -74,5 +76,4 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $accent-color;
-  text-decoration: none;
 }

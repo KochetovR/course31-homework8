@@ -1,0 +1,7 @@
+@mixin animation($type) {
+  transition: $type $animation-duration $animation-timing;
+}
+
+@mixin property($type: fill) {
+  transition-property: $type;
+}

@@ -1,16 +1,42 @@
+@import '../components/hero-backdrop';
+@import '../components/hero-modal';
+
+.hero__block {
+  width: 480px;
+  height: 400px;
+  background-image: linear-gradient($gradient-hero-color, $gradient-hero-color),
+    url('../../images/Hero.jpg');
+  background-size: 480px 400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 119px;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero__block {
+    background-image: linear-gradient(
+        $gradient-hero-color,
+        $gradient-hero-color
+      ),
+      url('../../images/Hero@2x.jpg');
+  }
+}
+
 .hero__title {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 360px;
-  margin-top: 118px;
+  margin-top: 0;
   margin-bottom: 30px;
   font-family: $main-font;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 1.62;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: $secondary-letter-spacing;
   text-transform: uppercase;
-  //   color: $primary-white-color;
+  color: $primary-white-color;
   text-align: center;
 }

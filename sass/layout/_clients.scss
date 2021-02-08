@@ -1,7 +1,16 @@
+.clients__block {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+}
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  width: 480px;
   margin: -15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 .clients__item {
   width: calc((100% - 2 * 30px) / 2);
@@ -15,17 +24,20 @@
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition-property: fill, border;
+  @extend %animation;
 
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
   }
+
+  &:hover .clients__svg,
+  &:focus .clients__svg {
+    fill: $accent-color;
+  }
 }
 
 .clients__svg {
   fill: $svg-team-color;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
 }

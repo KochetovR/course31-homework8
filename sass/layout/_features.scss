@@ -1,7 +1,3 @@
-.features__block {
-  width: 450px;
-  padding: 60px 0;
-}
 .features__item {
   width: 450px;
   margin-bottom: 30px;
@@ -11,11 +7,14 @@
 }
 .features__block-svg {
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: $primary-backgroung-color;
 }
+
 .features__title {
   font-family: $main-font;
   font-weight: bold;
@@ -27,8 +26,11 @@
 
 .features__text {
   display: block;
-  width: 450px;
   font-family: $main-font;
   line-height: $secondary-line-height;
   text-align: left;
+}
+.features__svg {
+  width: 70px;
+  height: 70px;
 }

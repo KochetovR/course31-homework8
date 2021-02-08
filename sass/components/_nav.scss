@@ -2,9 +2,8 @@
   position: relative;
   @extend %flex;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
+  padding: 16px 15px;
+  z-index: 100;
 }
 
 .nav-button {
@@ -13,6 +12,8 @@
   background-color: transparent;
   z-index: 999;
   outline: 0;
+  @include property();
+  @include animation(fill);
 
   &:hover {
     fill: $accent-color;
