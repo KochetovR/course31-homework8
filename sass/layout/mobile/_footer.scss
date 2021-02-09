@@ -1,0 +1,12 @@
+.footer__block {
+  width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 15px;
+  background-color: $footer-backgroung-color;
+}
+
+@import '../../components/mobile/footer-logo';
+@import '../../components/mobile/footer-contacts';
+@import '../../components/mobile/footer-container-link';
+@import '../../components/mobile/footer_form';

@@ -1,16 +1,8 @@
-.clients__block {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 60px 15px;
-}
 .clients__list {
   display: flex;
   flex-wrap: wrap;
   width: 480px;
   margin: -15px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
 }
 .clients__item {
   width: calc((100% - 2 * 30px) / 2);

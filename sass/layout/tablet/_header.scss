@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+  .page-header {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@import '../../components/tablet/logo';
+@import '../../components/tablet/menu';
+@import '../../components/tablet/nav';
