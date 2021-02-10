@@ -1,12 +1,17 @@
 @media screen and (min-width: 1200px) {
+  .menu-container {
+    margin-left: 93px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .nav {
-    width: 1200px;
-    padding: 0;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav-list {
-    margin-left: 93px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

@@ -7,62 +7,30 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 200px;
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from($gradient-hero-color),
-        to($gradient-hero-color)
-      ),
-      url('../../../images/Hero-desctop.jpg');
-    background-image: -o-linear-gradient(
-        $gradient-hero-color,
-        $gradient-hero-color
-      ),
-      url('../../../images/Hero-desctop.jpg');
     background-image: linear-gradient(
         $gradient-hero-color,
         $gradient-hero-color
       ),
       url('../../../images/Hero-desctop.jpg');
-    background-position: center;
     background-size: 1600px 600px;
-    background-color: $hero-bg-color;
   }
-}
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero__block {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from($gradient-hero-color),
-        to($gradient-hero-color)
-      ),
-      url('../../../images/Hero-desctop@2x.jpg');
-    background-image: -o-linear-gradient(
-        $gradient-hero-color,
-        $gradient-hero-color
-      ),
-      url('../../../images/Hero-desctop@2x.jpg');
-    background-image: linear-gradient(
-        $gradient-hero-color,
-        $gradient-hero-color
-      ),
-      url('../../../images/Hero-desctop@2x.jpg');
-    background-position: center;
-    background-size: 1600px 600px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero__block {
+      background-image: linear-gradient(
+          $gradient-hero-color,
+          $gradient-hero-color
+        ),
+        url('../../../images/Hero-desctop@2x.jpg');
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 696px;
-    font-size: 44px;
+    font-size: 38px;
     line-height: 1.36;
   }
 }

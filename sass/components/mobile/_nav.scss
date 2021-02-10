@@ -1,6 +1,4 @@
 .nav {
-  width: 480px;
-  position: relative;
   @extend %flex;
   justify-content: space-between;
   padding: 16px 15px;

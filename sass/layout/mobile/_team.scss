@@ -1,16 +1,15 @@
 .team {
   width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $primary-backgroung-color;
 }
+
 .team__list {
   width: 450px;
 }
 .team_card {
   width: 450px;
-  // height: 622px;
   padding-bottom: 24px;
   margin-top: 30px;
   margin-right: auto;
@@ -51,11 +50,17 @@
   justify-content: center;
 }
 .team_item-link:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 10px;
 }
-
+.team__social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  color: $svg-team-color;
+}
 .team__svg {
   width: 20px;
   height: 20px;
-  fill: $svg-team-color;
+  fill: currentColor;
 }

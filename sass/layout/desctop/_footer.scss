@@ -43,8 +43,9 @@
 }
 // link
 @media screen and (min-width: 1200px) {
-  .footer__list-link {
-    @include animation(background-color);
+  .footer__container-link:hover,
+  .footer__container-link:focus {
+    background-color: $accent-color;
   }
 }
 @media screen and (min-width: 1200px) {

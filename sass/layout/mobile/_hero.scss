@@ -4,8 +4,11 @@
 .hero__block {
   width: 480px;
   height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 118px;
   background-image: linear-gradient($gradient-hero-color, $gradient-hero-color),
-    url('../../images/Hero.jpg');
+    url('../../../images/Hero.jpg');
   background-size: 480px 400px;
 }
 @media screen and (min-device-pixel-ratio: 2),
@@ -16,7 +19,7 @@
         $gradient-hero-color,
         $gradient-hero-color
       ),
-      url('../../images/Hero@2x.jpg');
+      url('../../../images/Hero@2x.jpg');
   }
 }
 
@@ -30,8 +33,8 @@
   font-family: $main-font;
   font-style: normal;
   font-weight: 900;
-  font-style: normal;
-  font-size: 26px;
+  // получается так же как и на макете только при размере шрифта 22
+  font-size: 22px;
   line-height: 1.6;
   letter-spacing: $secondary-letter-spacing;
   text-transform: uppercase;
