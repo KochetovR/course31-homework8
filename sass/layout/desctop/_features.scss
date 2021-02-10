@@ -1,0 +1,31 @@
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: flex;
+    // justify-content: center;
+    flex-wrap: nowrap;
+    width: 1200px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+    margin: 0 30px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__title {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__text {
+    display: block;
+    width: 270px;
+  }
+}

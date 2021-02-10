@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
+    width: 768px;
     padding: 21px 15px;
   }
 }
@@ -77,10 +78,6 @@
 @media screen and (min-width: 768px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 0px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .contacts__item:not(:last-child) {
     margin-top: 10px;
   }
 }

@@ -42,7 +42,6 @@
 .contacts__block {
   margin-bottom: 64px;
 }
-
 .contacts__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -64,6 +63,7 @@
 // social link
 .menu__social-list {
   display: flex;
+  width: 480px;
 }
 .menu__social-item {
   margin-right: 10px;

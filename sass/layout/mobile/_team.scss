@@ -5,7 +5,9 @@
   padding: 60px 15px;
   background-color: $primary-backgroung-color;
 }
-
+.team__list {
+  width: 450px;
+}
 .team_card {
   width: 450px;
   // height: 622px;
@@ -30,7 +32,7 @@
   font-family: $main-font;
   font-weight: 500;
   font-size: 16px;
-  line-height: $third-line-height;
+  line-height: 1.18;
   text-align: center;
   color: $primary-black-color;
 }
@@ -39,7 +41,7 @@
   display: block;
   font-family: $main-font;
   font-size: 16px;
-  line-height: $third-line-height;
+  line-height: 1.18;
   text-align: center;
   margin-bottom: 16px;
 }

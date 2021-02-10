@@ -1,0 +1,82 @@
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    width: 1600px;
+    padding-left: 215px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__block-desctop {
+    width: 1200px;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    width: 231px;
+    margin-bottom: 9px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts-item:first-child {
+    margin-bottom: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts-link {
+    text-align: left;
+    @include animation(color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__block-link {
+    margin-left: 70px;
+  }
+}
+// link
+@media screen and (min-width: 1200px) {
+  .footer__list-link {
+    @include animation(background-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__list-link:hover,
+  .footer__list-link:focus {
+    background-color: $accent-color;
+  }
+}
+
+// form
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: flex;
+    margin-left: 93px;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form-label {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form-title {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__form-input {
+    width: 358px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}

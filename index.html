@@ -92,7 +92,7 @@
         </section>
         <!-- features -->
         <section>
-            <div class="container">
+            <div class="container__desctop container">
                 <ul class="list features__list">
                     <li class="features__item">
                         <div class="features__block-svg">
@@ -141,14 +141,51 @@
                 </ul>
             </div>
         </section>
+        <section class="works">
+            <div class="works-container">
+                <h2 class="title__section">Чем мы занимаемся</h2>
+                <ul class="list works__list">
+                    <li class="works__item">
+                        <img src="./images/desctop.jpg" 
+                        alt="работа на компьютере" 
+                        srcset="./images/desctop@2x.jpg 2x"
+                        width="370" height="294">
+                        <div class="works__text">
+                            <p>ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </div>
+                    </li>
+                    <li class="works__item">
+                        <img src="./images/mobile.jpg" 
+                        alt="работа на смартфоне"
+                         srcset="./images/mobile@2x.jpg 2x"
+                        width="370" height="294">
+                        <div class="works__text">
+                            <p>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                        </div>
+                    </li>
+                    <li class="works__item">
+                        <img src="./images/tablet.jpg" alt="работа на планшете" width="370" height="294">
+                        <div class="works__text">
+                            <p>ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <!-- team -->
         <section class="team">
+            <div class="container__desctop">
             <h2 class="title">Наша команда</h2>
             <ul class="list team__list">
                 <li class="team_card">
-                    <img class="team__img" alt="фото Игоря Демьяненко" 
-                    src="./images/party1.jpg"  
-                    srcset="./images/party1@2x.jpg 2x">
+                    <picture>
+                        <source srcset="./images/party1-desctop.jpg 1x, ./images/party1-desctop@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/party1-tablet.jpg 1x, ./images/party1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/party1.jpg 1x, ./images/party1@2x.jpg 2x" media="(max-width: 767px)"> 
+                        <img class="team__img" 
+                        alt="фото Игоря Демьяненко" 
+                        src="./images/party1.jpg 1x">
+                    </picture>
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <span class="team__skill">Product Designer</span>
                     <ul class="list team__list-link">
@@ -183,9 +220,14 @@
                     </ul>
                 </li>
                 <li class="team_card">
-                    <img class="team__img" alt="фото Ольги Репиной" 
-                    src="./images/party2.jpg"
-                    srcset="./images/party2@2x.jpg 2x">
+                    <picture>
+                        <source srcset="./images/party2-desctop.jpg 1x, ./images/party2-desctop@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/party2-tablet.jpg 1x, ./images/party2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/party2.jpg 1x, ./images/party2@2x.jpg 2x" media="(max-width: 767px)">
+                        <img class="team__img" 
+                        alt="фото Ольги Репиной" 
+                        src="./images/party2.jpg 1x">
+                    </picture>
                     <h3 class="team__name">Ольга Репина</h3>
                     <span class="team__skill">Frontend Developer</span>
                     <ul class="list team__list-link">
@@ -220,9 +262,14 @@
                     </ul>
                 </li>
                 <li class="team_card">
-                    <img class="team__img" alt="фото Николая Тарасова" 
-                    src="./images/party3.jpg"
-                    srcset="./images/party3@2x.jpg 2x">
+                    <picture>
+                        <source srcset="./images/party3-desctop.jpg 1x, ./images/party3-desctop@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/party3-tablet.jpg 1x, ./images/party3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/party3.jpg 1x, ./images/party3@2x.jpg 2x" media="(max-width: 767px)">
+                        <img class="team__img" 
+                        alt="фото Николая Тарасова" 
+                        src="./images/party3.jpg 1x">
+                    </picture>
                     <h3 class="team__name">Николай Тарасов</h3>
                     <span class="team__skill">Marketing</span>
                     <ul class="list team__list-link">
@@ -257,9 +304,14 @@
                     </ul>
                 </li>
                 <li class="team_card">
-                    <img class="team__img" alt="фото Михаила Ермакова" 
-                    src="./images/party4.jpg"
-                    srcset="./images/party4@2x.jpg 2x">
+                    <picture>
+                        <source srcset="./images/party4-desctop.jpg 1x, ./images/party4-desctop@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/party4-tablet.jpg 1x, ./images/party4-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/party4.jpg 1x, ./images/party4@2x.jpg 2x" media="(max-width: 767px)">
+                        <img class="team__img" 
+                        alt="фото Михаила Ермакова" 
+                        src="./images/party4.jpg 1x">
+                    </picture>
                     <h3 class="team__name">Михаил Ермаков</h3>
                     <span class="team__skill">UI Designer</span>
                     <ul class="list team__list-link">
@@ -294,6 +346,7 @@
                     </ul>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- clients -->
         <section class="container">
@@ -359,55 +412,60 @@
     <!-- footer -->
     <footer>
         <div class="footer__block">
-            <a href="./index.html" class="footer__logo">
-                Web<span class="footer__logo-white">Studio</span>
-            </a>
-            <address class="footer__address">
-                г. Киев, пр-т Леси Украинки, 26
-            </address>
-            <ul class="list">
-                <li>
-                    <a class="footer__contacts" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li>
-                    <a class="footer__contacts" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
-            <div>
-                <h2 class="footer__container-title">присоединяйтесь</h2>
-                <ul class="list footer__container-list">
-                    <li class="footer__container-item">
-                        <a href="" class="footer__container-link">
-                            <svg class="footer__container-svg">
-                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
-                            </svg>
+            <div class="footer__block-desctop">
+                <div class="footer__block-info">
+                    <div>
+                        <a href="./index.html" class="footer__logo">
+                            Web<span class="footer__logo-white">Studio</span>
                         </a>
-                    </li>
-                    <li class="footer__container-item">
-                        <a href="" class="footer__container-link">
-                            <svg class="footer__container-svg">
-                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__container-item">
-                        <a href="" class="footer__container-link">
-                            <svg class="footer__container-svg">
-                                <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__container-item">
-                        <a href="" class="footer__container-link">
-                            <svg class="footer__container-svg">
-                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <form>
-                <label>
+                        <address class="footer__address">
+                            г. Киев, пр-т Леси Украинки, 26
+                        </address>
+                        <ul class="list">
+                            <li class="footer__contacts-item">
+                                <a class="footer__contacts-link" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="footer__contacts-item">
+                                <a class="footer__contacts-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block-link">
+                        <h2 class="footer__container-title">присоединяйтесь</h2>
+                        <ul class="list footer__container-list">
+                            <li class="footer__container-item">
+                                <a href="" class="footer__container-link">
+                                    <svg class="footer__container-svg">
+                                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__container-item">
+                                <a href="" class="footer__container-link">
+                                    <svg class="footer__container-svg">
+                                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__container-item">
+                                <a href="" class="footer__container-link">
+                                    <svg class="footer__container-svg">
+                                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__container-item">
+                                <a href="" class="footer__container-link">
+                                    <svg class="footer__container-svg">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <form class="footer__form">
+                <label class="footer__form-label">
                     <span class="footer__form-title">Подпишитесь на рассылку</span>
                     <input type="email" name="email" placeholder="E-mail" class="footer__form-input">
                 </label>
@@ -417,6 +475,7 @@
                     </svg>
                 </button>
             </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>

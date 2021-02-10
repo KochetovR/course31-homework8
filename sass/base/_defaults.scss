@@ -1,6 +1,11 @@
 body {
   @extend %body;
 }
+@media screen and (max-width: 767px) {
+  body {
+    width: 480px;
+  }
+}
 body.modal-open {
   overflow: hidden;
 }
@@ -31,6 +36,20 @@ p {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__desctop {
+    width: 1200px;
+    padding: 94px 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .title {
   margin-bottom: 30px;
@@ -41,7 +60,12 @@ p {
   text-align: center;
   color: $primary-black-color;
 }
-
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
 .button {
   display: flex;
   align-items: center;
