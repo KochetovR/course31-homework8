@@ -57,6 +57,10 @@
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: $primary-backgroung-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .features__title {
@@ -87,7 +91,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    // width: 270px;
   }
 }
 .features__svg {

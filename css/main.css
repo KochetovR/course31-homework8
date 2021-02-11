@@ -1,38 +1,3 @@
-@font-face {
-  font-family: raleway;
-  src: url(../../fonts/raleway-v19-latin/raleway-v19-latin-700.ttf);
-  src: url(../../fonts/raleway-v19-latin/raleway-v19-latin-700.woff2);
-  src: url(../../fonts/raleway-v19-latin/raleway-v19-latin-700.woff);
-}
-
-@font-face {
-  font-family: roboto-400;
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-regular.ttf);
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-regular.woff2);
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-regular.woff);
-}
-
-@font-face {
-  font-family: roboto-400;
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-500.ttf);
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-500.woff2);
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-500.woff);
-}
-
-@font-face {
-  font-family: roboto-700;
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-700.ttf);
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-700.woff2);
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-700.woff);
-}
-
-@font-face {
-  font-family: roboto-900;
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-900.ttf);
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-900.woff2);
-  src: url(../../fonts/roboto-v20-latin/roboto-v20-latin-900.woff);
-}
-
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -356,7 +321,6 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 450px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1090,44 +1054,26 @@ p {
   .hero__block {
     width: 768px;
     height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    padding-top: 118px;
-    background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero__block {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet@2x.jpg");
-  }
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet@2x.jpg");
 }
 
 @media screen and (min-width: 1200px) {
   .hero__block {
+    max-width: 1600px;
     width: 1600px;
     height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
     padding-top: 200px;
-    background-color: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero-desctop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero__block {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero-desctop@2x.jpg");
-  }
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero-desctop@2x.jpg");
 }
 
 .hero__title {
@@ -1225,6 +1171,12 @@ p {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 1200px) {
+  .features__block-svg {
+    width: 270px;
+  }
+}
+
 .features__title {
   font-family: roboto, sans-serif;
   font-weight: bold;
@@ -1250,12 +1202,6 @@ p {
 @media screen and (min-width: 768px) {
   .features__text {
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features__text {
-    width: 270px;
   }
 }
 
@@ -1798,6 +1744,12 @@ p {
   flex-wrap: wrap;
   margin-bottom: 40px;
   margin-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .examples__list-button {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
