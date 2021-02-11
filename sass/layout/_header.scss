@@ -1,0 +1,24 @@
+.page-header {
+  position: relative;
+  width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.page__header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
+
+@import '../components/logo';
+@import '../components/nav';
+@import '../components/menu';

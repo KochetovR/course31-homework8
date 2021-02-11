@@ -2,9 +2,14 @@
   color: $accent-color;
   font-family: $secondary-font;
   font-weight: $secondary-font-weight;
-  font-size: 26px;
-  line-height: $fourthline-height;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: $fourthline-height;
+  }
 }
 
 .logo-black {

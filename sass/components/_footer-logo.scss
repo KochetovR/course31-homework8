@@ -11,4 +11,10 @@
   &-white {
     color: $primary-white-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: $fourthline-height;
+    text-align: left;
+  }
 }

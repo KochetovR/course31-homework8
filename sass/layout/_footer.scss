@@ -1,0 +1,37 @@
+@import '../components/footer-logo';
+@import '../components/footer-contacts';
+@import '../components/footer-container-link';
+@import '../components/footer_form';
+
+.footer {
+  display: block;
+  background-color: $footer-backgroung-color;
+}
+
+.footer__block {
+  padding: 60px 15px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 89px;
+    padding-left: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__block-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+}

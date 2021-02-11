@@ -1,12 +1,8 @@
-@import '../fonts/fonts';
+@import './utils/fonts';
 @import './base/modern-normalize';
 @import './utils/variables';
 @import './utils/placeholder';
 @import './utils/mixin';
 @import './base/defaults';
-@import './layout/mobile/studio';
-@import './layout/tablet/studio';
-@import './layout/desctop/studio';
-@import './layout/mobile/portfolio';
-@import './layout/tablet/portfolio';
-@import './layout/desctop/portfolio';
+@import './layout/studio';
+@import './layout/portfolio';

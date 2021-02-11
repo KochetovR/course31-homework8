@@ -1,3 +1,17 @@
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    display: flex;
+    margin-left: 93px;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__form-label {
+    margin-right: 12px;
+  }
+}
+
 .footer__form-title {
   display: block;
   margin-bottom: 20px;
@@ -24,6 +38,16 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 85px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 

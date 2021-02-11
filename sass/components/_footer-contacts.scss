@@ -7,10 +7,20 @@
   line-height: $secondary-line-height;
   text-align: center;
   color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 233px;
+    margin-bottom: 9px;
+    text-align: left;
+  }
 }
 
 .footer__contacts-item:first-child {
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 .footer__contacts-link {
   display: block;
@@ -19,4 +29,14 @@
   text-align: center;
   color: $secondary-text-color;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    @include animation(color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 }

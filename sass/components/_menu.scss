@@ -1,0 +1,28 @@
+.menu-container {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 480px;
+  z-index: 10;
+  background-color: $primary-white-color;
+
+  &.is-open {
+    display: block;
+    height: 796px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 0;
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}

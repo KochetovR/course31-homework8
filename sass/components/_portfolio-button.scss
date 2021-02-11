@@ -3,19 +3,34 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
   margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    margin-top: 94px;
+  }
 }
 
 .examples__item-button {
   margin-right: 8px;
-}
 
-.examples__item-button:nth-last-child(-n + 2) {
-  margin-top: 15px;
-}
-.examples__item-button:last-child {
-  margin-right: 0px;
-}
+  &:nth-last-child(-n + 2) {
+    margin-top: 15px;
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
 
+  @media screen and (min-width: 768px) {
+    &:nth-last-child(-n + 2) {
+      margin-top: 0;
+    }
+  }
+}
 .examples__button {
   padding: 6px 22px;
   border: 0;

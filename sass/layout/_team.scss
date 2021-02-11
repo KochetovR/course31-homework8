@@ -1,0 +1,128 @@
+.team {
+  width: 480px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $primary-backgroung-color;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__list {
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // flex-wrap: nowrap;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.team_card {
+  width: 450px;
+  padding-bottom: 24px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin: 0 30px 0 0;
+    padding-bottom: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.team__img {
+  width: 450px;
+  height: 460px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
+}
+
+.team__name {
+  margin-bottom: 10px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: $primary-black-color;
+}
+
+.team__skill {
+  display: block;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team__list-link {
+  display: flex;
+  justify-content: center;
+}
+
+.team_item-link:not(:last-child) {
+  margin-right: 10px;
+}
+.team__social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  color: $svg-team-color;
+
+  @media screen and (min-width: 1200px) {
+    transition-property: color, fill, background-color, border-radius;
+    transition: $animation-duration $animation-timing;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      border-radius: 50%;
+      color: $primary-white-color;
+      fill: currentColor;
+    }
+  }
+}
+.team__svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

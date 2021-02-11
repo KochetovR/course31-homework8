@@ -1,3 +1,13 @@
+@media screen and (min-width: 768px) {
+  .footer__block-link {
+    margin-left: 165px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+  }
+}
+
 .footer__container-title {
   display: block;
   margin-top: 60px;
@@ -7,12 +17,23 @@
   text-align: center;
   text-transform: uppercase;
   color: $primary-white-color;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__container-list {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__container-item:not(:last-child) {
@@ -29,8 +50,14 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
   transition: $animation-duration $animation-timing;
-}
 
+  @media screen and (min-width: 1200px) {
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}
 .footer__container-svg {
   width: 20px;
   height: 20px;
