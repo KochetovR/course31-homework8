@@ -1,6 +1,9 @@
 @import '../components/hero-backdrop';
 @import '../components/hero-modal';
 
+.hero {
+  background-color: #c4c4c4;
+}
 .hero__block {
   width: 480px;
   height: 400px;
@@ -8,7 +11,6 @@
   margin-left: auto;
   text-align: center;
   padding-top: 118px;
-  background-color: #c4c4c4;
   background-image: linear-gradient($gradient-hero-color, $gradient-hero-color),
     url('../images/Hero.jpg');
   background-position: center;

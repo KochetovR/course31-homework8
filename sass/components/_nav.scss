@@ -12,7 +12,7 @@
   padding: 0px;
   border: none;
   background-color: transparent;
-  z-index: 999;
+  z-index: 2;
   outline: 0;
   @include property();
   @include animation(fill);
@@ -225,11 +225,12 @@
     margin-right: 8px;
     width: 14px;
     height: 10px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+    }
   }
 }
 // social link
