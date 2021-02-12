@@ -49,19 +49,27 @@
         $gradient-hero-color
       ),
       url('../images/Hero-desctop.jpg');
-  }
-  @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        $gradient-hero-color,
-        $gradient-hero-color
-      ),
-      url('../images/Hero-desctop@2x.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $gradient-hero-color,
+          $gradient-hero-color
+        ),
+        url('../images/Hero-desctop@2x.jpg');
+    }
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__block {
     height: 600px;
     padding-top: 200px;
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          $gradient-hero-color,
+          $gradient-hero-color
+        ),
+        url('../images/Hero-desctop@2x.jpg');
+    }
   }
 }
 

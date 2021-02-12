@@ -4,12 +4,12 @@
   top: 0;
   left: 0;
   z-index: 1;
-  width: 480px;
   background-color: $primary-white-color;
 
   &.is-open {
     display: block;
     height: 796px;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {

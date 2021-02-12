@@ -165,8 +165,11 @@
   background-size: contain;
   background-origin: border-box;
 }
-.modal__input-checkbox:focus + .modal__label-checkbox::after {
-  border: 3px solid #212121;
+
+@media screen and (min-width: 1200px) {
+  .modal__input-checkbox:focus + .modal__label-checkbox::after {
+    border: 3px solid #212121;
+  }
 }
 
 .modal__label textarea {
