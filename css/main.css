@@ -302,6 +302,10 @@ body {
   margin-bottom: 0;
 }
 
+body {
+  max-width: 1600px;
+}
+
 body.modal-open {
   overflow: hidden;
 }
@@ -343,8 +347,6 @@ p {
 
 @media screen and (min-width: 1200px) {
   .container__desctop {
-    width: 1200px;
-    padding: 94px 15px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -487,7 +489,7 @@ p {
 
 .nav-list {
   margin-top: 48px;
-  padding-left: 40px;
+  margin-left: 40px;
   margin-bottom: 302px;
 }
 
@@ -498,7 +500,6 @@ p {
     margin-right: 84px;
     margin-left: 88px;
     margin-top: 0;
-    padding-left: 0;
   }
 }
 
@@ -644,6 +645,8 @@ p {
 
 @media screen and (min-width: 1200px) {
   .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
     transition-property: color, fill;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -668,6 +671,13 @@ p {
     font-size: 12px;
     line-height: 1.71;
     color: #757575;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tel {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -1027,12 +1037,8 @@ p {
   color: #ffffff;
 }
 
-.hero {
-  background-color: #c4c4c4;
-}
-
 .hero__block {
-  width: 480px;
+  min-width: 480px;
   height: 400px;
   margin-right: auto;
   margin-left: auto;
@@ -1050,9 +1056,31 @@ p {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .hero__block {
+    max-width: 768px;
+    min-width: 480px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero__block {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero__block {
-    width: 768px;
+    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
   }
@@ -1062,10 +1090,22 @@ p {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet@2x.jpg");
 }
 
+@media screen and (min-width: 768px) {
+  .hero__block {
+    min-width: 768px;
+    max-width: 1200px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero-desctop.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero-desctop@2x.jpg");
+}
+
 @media screen and (min-width: 1200px) {
   .hero__block {
     max-width: 1600px;
-    width: 1600px;
     height: 600px;
     padding-top: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero-desctop.jpg");
@@ -1296,7 +1336,6 @@ p {
 
 .team_card {
   width: 450px;
-  padding-bottom: 24px;
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -1315,8 +1354,8 @@ p {
 @media screen and (min-width: 1200px) {
   .team_card {
     width: 270px;
+    height: 428px;
     margin: 0 30px 0 0;
-    padding-bottom: 30px;
   }
   .team_card:last-child {
     margin-right: 0;
@@ -1365,6 +1404,13 @@ p {
 .team__list-link {
   display: flex;
   justify-content: center;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list-link {
+    padding-bottom: 30px;
+  }
 }
 
 .team_item-link:not(:last-child) {

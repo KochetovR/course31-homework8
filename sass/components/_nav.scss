@@ -43,7 +43,7 @@
 
 .nav-list {
   margin-top: 48px;
-  padding-left: 40px;
+  margin-left: 40px;
   margin-bottom: 302px;
 
   @media screen and (min-width: 768px) {
@@ -52,7 +52,6 @@
     margin-right: 84px;
     margin-left: 88px;
     margin-top: 0;
-    padding-left: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -182,8 +181,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // padding: 32px 0;
-
+    font-size: 14px;
+    line-height: 1.14;
     transition-property: color, fill;
     transition: $animation-duration $animation-timing;
   }
@@ -205,6 +204,11 @@
     font-size: 12px;
     line-height: $secondary-line-height;
     color: $primary-text-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 @media screen and (min-width: 768px) {

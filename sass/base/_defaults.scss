@@ -1,5 +1,6 @@
 body {
   @extend %body;
+  max-width: 1600px;
 }
 body.modal-open {
   overflow: hidden;
@@ -37,8 +38,6 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .container__desctop {
-    width: 1200px;
-    padding: 94px 15px;
     margin-right: auto;
     margin-left: auto;
   }

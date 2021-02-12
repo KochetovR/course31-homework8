@@ -30,7 +30,6 @@
 }
 .team_card {
   width: 450px;
-  padding-bottom: 24px;
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -46,8 +45,8 @@
 
   @media screen and (min-width: 1200px) {
     width: 270px;
+    height: 428px;
     margin: 0 30px 0 0;
-    padding-bottom: 30px;
     &:last-child {
       margin-right: 0;
     }
@@ -92,6 +91,11 @@
 .team__list-link {
   display: flex;
   justify-content: center;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .team_item-link:not(:last-child) {
